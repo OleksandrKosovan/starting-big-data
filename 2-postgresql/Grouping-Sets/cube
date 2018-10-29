@@ -1,0 +1,29 @@
+﻿-- PostgreSQL CUBE examples
+-- http://www.postgresqltutorial.com/postgresql-cube/
+
+SELECT
+    brand,
+    segment,
+    SUM (quantity)
+FROM
+    sales
+GROUP BY
+    CUBE (brand, segment)
+ORDER BY
+    brand,
+    segment;
+
+-- partial cube
+
+SELECT
+    brand,
+    segment,
+    SUM (quantity)
+FROM
+    sales
+GROUP BY
+    brand,
+    CUBE (segment)
+ORDER BY
+    brand,
+    segment;
