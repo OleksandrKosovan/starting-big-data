@@ -1,0 +1,4 @@
+﻿-- PostgreSQL UNION examples
+-- http://www.postgresqltutorial.com/postgresql-union/
+
+--SELECT * FROM sales2007q1 UNION SELECT * FROM  sales2007q2;

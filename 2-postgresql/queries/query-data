@@ -1,0 +1,109 @@
+﻿-- PostgreSQL SELECT examples
+-- http://www.postgresqltutorial.com/postgresql-select/
+
+/*
+1. To query data from all rows and all columns of the customer table, you use the following query:
+*/
+
+SELECT * FROM customer;
+
+/*
+2. Suppose you just want to know the first name, last name and email 
+of customers, you can specify the column names in the SELECT statement 
+as follows:
+*/
+
+SELECT first_name, last_name, email FROM customer;
+
+-- PostgreSQL ORDER BY examples
+-- http://www.postgresqltutorial.com/postgresql-order-by/
+
+/*
+1. The following query sorts customers by the first name in ascending order:
+*/
+
+SELECT first_name, last_name FROM customer ORDER BY first_name ASC;
+
+/*
+2. If you want to sort the customers by the last name in descending order, 
+you can use the DESCkeyword as shown in the following query:
+*/
+
+SELECT
+       first_name,
+       last_name
+FROM
+       customer
+ORDER BY
+       last_name DESC;
+
+
+-- PostgreSQL SELECT DISTINCT examples
+-- http://www.postgresqltutorial.com/postgresql-select-distinct/
+
+/*
+1. First, use the following statement to create the t1 table that 
+consists of three columns: id, bcolorand fcolor.
+*/
+
+CREATE TABLE t1 (
+ id serial NOT NULL PRIMARY KEY,
+ bcolor VARCHAR,
+ fcolor VARCHAR
+);
+
+/*
+2. Second, insert some rows into the t1 table using the following INSERT 
+statement:
+*/
+
+INSERT INTO t1 (bcolor, fcolor)
+VALUES
+ ('red', 'red'),
+ ('red', 'red'),
+ ('red', NULL),
+ (NULL, 'red'),
+ ('red', 'green'),
+ ('red', 'blue'),
+ ('green', 'red'),
+ ('green', 'blue'),
+ ('green', 'green'),
+ ('blue', 'red'),
+ ('blue', 'green'),
+ ('blue', 'blue');
+
+ /*
+ 3. Third, query the data from the t1 table by using the SELECT statement:
+*/
+
+SELECT
+ id,
+ bcolor,
+ fcolor
+FROM
+ t1;
+
+
+/*
+4. PostgreSQL DISTINCT on one column example
+*/
+
+SELECT
+ DISTINCT bcolor
+FROM
+ t1
+ORDER BY
+ bcolor;
+
+/*
+5. PostgreSQL DISTINCT on multiple columns
+*/
+
+SELECT
+ DISTINCT bcolor,
+ fcolor
+FROM
+ t1
+ORDER BY
+ bcolor,
+ fcolor;

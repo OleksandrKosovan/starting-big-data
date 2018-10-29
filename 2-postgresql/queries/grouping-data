@@ -1,0 +1,20 @@
+﻿-- PostgreSQL GROUP BY clause examples
+-- http://www.postgresqltutorial.com/postgresql-group-by/
+
+SELECT
+ customer_id
+FROM
+ payment
+GROUP BY
+ customer_id;
+
+ -- PostgreSQL HAVING clause examples
+-- http://www.postgresqltutorial.com/postgresql-having/
+
+SELECT
+ customer_id,
+ SUM (amount)
+FROM
+ payment
+GROUP BY
+ customer_id;

@@ -1,0 +1,183 @@
+﻿-- PostgreSQL WHERE examples
+-- http://www.postgresqltutorial.com/postgresql-where/
+
+SELECT last_name, first_name
+FROM customer
+WHERE first_name = 'Jamie';
+
+-- with AND
+SELECT last_name, first_name
+FROM customer
+WHERE first_name = 'Jamie' AND
+ last_name = 'Rice';
+
+ -- with OR
+SELECT customer_id,
+ amount,
+ payment_date
+FROM payment
+WHERE amount <= 1 OR amount >= 8;
+
+-- PostgreSQL LIMIT examples
+-- http://www.postgresqltutorial.com/postgresql-limit/
+SELECT
+ film_id,
+ title,
+ release_year
+FROM
+ film
+ORDER BY
+ film_id
+LIMIT 5;
+
+-- with OFFSET
+SELECT
+ film_id,
+ title,
+ release_year
+FROM
+ film
+ORDER BY
+ film_id
+LIMIT 4 OFFSET 3;
+
+-- Introduction to PostgreSQL FETCH clause
+-- http://www.postgresqltutorial.com/postgresql-fetch/
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST ROW ONLY;
+
+-- 
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST 1 ROW ONLY;
+
+--
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+FETCH FIRST 5 ROW ONLY;
+
+-- 
+
+SELECT
+    film_id,
+    title
+FROM
+    film
+ORDER BY
+    title 
+OFFSET 5 ROWS 
+FETCH FIRST 5 ROW ONLY; 
+
+-- PostgreSQL IN operator examples
+-- http://www.postgresqltutorial.com/postgresql-in/
+
+SELECT
+ customer_id,
+ rental_id,
+ return_date
+FROM
+ rental
+WHERE
+ customer_id IN (1, 2)
+ORDER BY
+ return_date DESC;
+
+--
+
+SELECT
+ rental_id,
+ customer_id,
+ return_date
+FROM
+ rental
+WHERE
+ customer_id = 1
+OR customer_id = 2
+ORDER BY
+ return_date DESC;
+
+ --
+
+SELECT
+ customer_id,
+ rental_id,
+ return_date
+FROM
+ rental
+WHERE
+ customer_id NOT IN (1, 2);
+
+ -- PostgreSQL IN with a subquery
+SELECT
+ customer_id
+FROM
+ rental
+WHERE
+ CAST (return_date AS DATE) = '2005-05-27';
+
+-- PostgreSQL BETWEEN operator examples
+-- http://www.postgresqltutorial.com/postgresql-between/
+
+SELECT
+ customer_id,
+ payment_id,
+ amount
+FROM
+ payment
+WHERE
+ amount BETWEEN 8
+AND 9;
+
+-- 
+
+SELECT
+ customer_id,
+ payment_id,
+ amount,
+ payment_date
+FROM
+ payment
+WHERE
+ payment_date BETWEEN '2007-02-07'
+AND '2007-02-15';
+
+-- PostgreSQL LIKE examples
+-- http://www.postgresqltutorial.com/postgresql-like/
+
+SELECT
+ 'foo' LIKE 'foo', -- true
+ 'foo' LIKE 'f%', -- true
+ 'foo' LIKE '_o_', -- true
+ 'bar' LIKE 'b_'; -- false
+
+ --
+
+SELECT
+ first_name,
+        last_name
+FROM
+ customer
+WHERE
+ first_name LIKE '%er%'
+
+
+ 
