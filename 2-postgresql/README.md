@@ -14,7 +14,13 @@ First, i installed PostgreSQL on Ubuntu 18.04. [Link - digitalocean](https://www
 
 Second, i created user.
 
-`nfdvajbn`
+`$ sudo -i -u postgres`
+
+`$ psql`
+
+`CREATE USER some-name-user WITH PASSWORD "some-password"`
+
+`ALTER USER some-name-user WITH SUPERUSER`
 
 
 
