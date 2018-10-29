@@ -45,7 +45,7 @@ People use data warehouse for analiticas or for other goals. Main component in d
 
 **Scheme**
 
-![alt txt](https://en.wikipedia.org/wiki/File:Data_warehouse_architecture.jpg)
+![alt txt](https://upload.wikimedia.org/wikipedia/commons/8/8d/Data_warehouse_architecture.jpg)
 
 
 ### 3. Data Marts
