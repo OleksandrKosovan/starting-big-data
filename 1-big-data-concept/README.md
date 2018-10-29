@@ -62,3 +62,20 @@ Data marts is access to data, which contain in some specific group. (For example
 
 ![alt txt](https://www.guru99.com/images/1/022218_0616_DataWarehou1.png)
 
+
+### 4. Snowflake Diagram
+
+
+**How does Wikipedia description it for us?**
+
+Snowflake schema is a logical arrangement of tables in a multidimensional database such that the entity relationship diagram resembles a snowflake shape. The snowflake schema is represented by centralized fact tables which are connected to multiple dimensions. "Snowflaking" is a method of normalizing the dimension tables in a star schema. When it is completely normalized along all the dimension tables, the resultant structure resembles a snowflake with the fact table in the middle. The principle behind snowflaking is normalization of the dimension tables by removing low cardinality attributes and forming separate tables. [here](https://en.wikipedia.org/wiki/Snowflake_schema)
+
+**My understanding**
+
+
+Snowflake Diagram is structure of links between tables. Scheme like snowflake with Fact and Dimension tables.
+
+**Scheme**
+
+![alt txt](https://upload.wikimedia.org/wikipedia/commons/b/b2/Snowflake-schema.png)
+
