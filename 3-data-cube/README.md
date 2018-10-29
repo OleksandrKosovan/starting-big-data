@@ -8,5 +8,10 @@
 
 ### 2. Data cube and Python
 
+I finded many interesting links for implementation data cube with python.
+- [cubes.databrewery.org](http://cubes.databrewery.org/index.html)
+- [Cubes - OLAP Framework](https://pythonhosted.org/cubes/)
+
+First, i created 3D-array with numpy. [Jupyter Notebook](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/1-data-cube-simple-sample.ipynb)
 
 
