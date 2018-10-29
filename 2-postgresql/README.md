@@ -22,6 +22,9 @@ Second, i created user.
 
 `ALTER USER some-name-user WITH SUPERUSER`
 
+Next step is using [pgAdmin III](https://www.pgadmin.org/). It is PostgreSQL Tools.
+
+
 
 
 
