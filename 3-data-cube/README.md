@@ -9,9 +9,21 @@
 ### 2. Data cube and Python
 
 I finded many interesting links for implementation data cube with python.
-- [cubes.databrewery.org](http://cubes.databrewery.org/index.html)
-- [Cubes - OLAP Framework](https://pythonhosted.org/cubes/)
+- [cubes.databrewery.org](http://cubes.databrewery.org/index.html)  :link:
+- [Cubes - OLAP Framework](https://pythonhosted.org/cubes/)  :link:
 
-First, i created 3D-array with numpy. [Jupyter Notebook](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/1-data-cube-simple-sample.ipynb)
+First, i created 3D-array with numpy. [Jupyter Notebook](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/1-data-cube-simple-sample.ipynb)  :link:
 
+
+### 3. PostgreSQL and Data Cube
+
+**1.** I used this [tutorial](http://www.postgresqltutorial.com/postgresql-cube/). **Note**: *in this tutorial, you will learn how to use the PostgreSQL CUBE to generate multiple grouping sets.*
+
+**2.** I finded data, which contained information about sales (*date, location and products*). [Link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/data-cube-postgreSQL/data/Sample-Superstore.csv).  :link: And i selected only data, that i need.
+
+**3.** Next step, i import this data with PostgreSQL. [Link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/data-cube-postgreSQL/create-data-cube/import-csv) :link:
+
+**4.** Finish, i created data cube with this data. [Link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/3-data-cube/data-cube-postgreSQL/create-data-cube/data-cube-sql)  :link:
+
+**Details**
 
