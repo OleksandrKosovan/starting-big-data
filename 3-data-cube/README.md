@@ -30,15 +30,16 @@ First, i created 3D-array with numpy. [Jupyter Notebook](https://github.com/Olek
 The query generates all possible grouping sets based on the dimension columns specified in `CUBE`. The CUBE subclause is a short way to define multiple grouping sets so the following are equivalent:
 
 `
-SELECT 
-	orderdate, 
-	city, 
+/SELECT 
+/	orderdate, 
+/	city, 
 	product 
 FROM 
 	sales
 GROUP BY
 	CUBE(orderdate,city,product);
 `
+
 AND
 
 `
