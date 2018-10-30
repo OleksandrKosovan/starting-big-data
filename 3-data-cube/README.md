@@ -31,7 +31,7 @@ The query generates all possible grouping sets based on the dimension columns sp
 
 `
 SELECT 
-/n	orderdate, 
+n/	orderdate, 
 	city, 
 	product 
 FROM 
