@@ -1,0 +1,12 @@
+﻿CREATE TABLE sales 
+(
+	id serial NOT NULL,
+	orderdate character varying(50),
+	city character varying(50),
+	product character varying(50)
+)
+
+COPY sales(orderdate,city,product) 
+FROM '/home/oleksandr/postgreSQL/python-cleaning-data/data.csv' DELIMITER ',' CSV HEADER;
+
+SELECT * FROM sales;

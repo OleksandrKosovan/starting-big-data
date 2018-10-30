@@ -1,0 +1,30 @@
+﻿--SELECT * FROM sales;
+
+SELECT 
+	orderdate, 
+	city, 
+	product 
+FROM 
+	sales
+GROUP BY
+	CUBE(orderdate,city,product);
+
+--so the following are equivalent
+/*
+SELECT 
+	orderdate, 
+	city, 
+	product 
+FROM 
+	sales
+GROUPING SETS(
+	(orderdate,city,product),
+	(orderdate,city),
+	(orderdate,product),
+	(city,product),
+	(orderdate),
+	(city),
+	(product),
+	()
+)
+*/
