@@ -19,3 +19,35 @@ Apache Spark is written in Scala programming language. To support Python with Sp
 `sudo apt install scala`
 
 
+**python**
+
+`sudo apt-get -y upgrade`
+
+
+**Anaconda**
+
+Download from this [link](https://www.anaconda.com/download/#linux)
+
+After anaconda instalation, you need to create new *conda environment*.
+
+`conda create --name py35 python=3.5`
+
+Activating this environment.
+
+`conda activate py35`
+
+Add conda environment to jupyter notebook
+
+`python -m ipykernel install --user --name myenv --display-name "py35"`
+
+Add conda java and jdk
+
+`conda install -c cyclus java-jdk`
+
+
+Add conda pyspark
+
+`conda install -c conda-forge pyspark`
+
+
+**Done!**
