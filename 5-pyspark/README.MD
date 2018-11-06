@@ -55,4 +55,6 @@ Add conda pyspark
 
 ### 3. Then you can use PySpark and Jupyter Notebook together.
 
-Jupyter Notebook [link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/5-pyspark/1-pyspark-SparkContext.ipynb)
+Jupyter Notebook [link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/5-pyspark/1-pyspark-SparkContext.ipynb) :link:
+
+Uploading and researching data sample. [link](https://github.com/OleksandrKosovan/starting-big-data/blob/master/5-pyspark/2-data-frame-spark.ipynb) :link:
