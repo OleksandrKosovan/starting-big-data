@@ -17,3 +17,5 @@ This tutorial is based on Titanic data from Kaggle website. it has 2 parts:
 ml and sql dataframe simplify a lot the preprocessing stages, whereas with mmlib and rdds you often have to create your own functions to process the data.
 
 ml also have a vast range of metrics compared to mllib.
+
+[Source](https://creativedata.atlassian.net/wiki/spaces/SAP/pages/83237142/Pyspark+-+Tutorial+based+on+Titanic+Dataset)
