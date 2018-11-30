@@ -52,8 +52,12 @@ I used this hadoop tutorial - [link here](https://www.tutorialspoint.com/hadoop/
 
 `$HADOOP_HOME/bin/hadoop namenode -format`
 
-``
+`/usr/local/hadoop/sbin/start-dfs.sh`
 
+4. Inserting Data into HDFS - [link](https://www.tutorialspoint.com/hadoop/hadoop_hdfs_operations.htm) :link:
+
+
+**bin/hadoop fs -** fs commands [link](https://hadoop.apache.org/docs/r2.4.1/hadoop-project-dist/hadoop-common/FileSystemShell.html) :link:
 
 
 
