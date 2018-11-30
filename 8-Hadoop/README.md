@@ -14,9 +14,15 @@ I think, the best source with installing information is digital ocean. [Link](ht
 
 or
 
-`$ cd /usr/local/hadoop/bin`
+`$ PATH=$PATH:/usr/local/hadoop/bin/`
 
 `$ hadoop`
+
+or
+
+`export HADOOP_HOME=/usr/local/hadoop`
+
+`$HADOOP_HOME/bin/hadoop`
 
 **First operation:**
 
