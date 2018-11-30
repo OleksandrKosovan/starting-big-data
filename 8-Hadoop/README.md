@@ -36,6 +36,23 @@ Next, we can use the following command to run the MapReduce hadoop-mapreduce-exa
 
 `/usr/local/hadoop/bin/hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.0.3.jar grep ~/hadoop-folder/input ~/hadoop-folder/grep_example 'allowed[.]*'`
 
+### HDFS (*Hadoop File System*)
+
+I used this hadoop tutorial - [link here](https://www.tutorialspoint.com/hadoop/index.htm)
+
+1. Setting Up Hadoop
+
+`export HADOOP_HOME=/usr/local/hadoop`
+
+2. Before proceeding further, you need to make sure that Hadoop is working fine.
+
+`$HADOOP_HOME/bin/hadoop version`
+
+3. Starting HDFS
+
+`$HADOOP_HOME/bin/hadoop namenode -format`
+
+``
 
 
 
