@@ -1,4 +1,5 @@
-id|name|value
-1,name1,value1
-2,name2,value2
+# MapReduce
+
+![alt txt](https://4zy7s42hws72i51dv3513vnm-wpengine.netdna-ssl.com/wp-content/uploads/2017/07/hadoop-mapreduce-big.png)
+
 
